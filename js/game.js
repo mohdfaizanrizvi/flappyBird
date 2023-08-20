@@ -1,7 +1,7 @@
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth; // Set canvas width to window width
-canvas.height = window.innerHeight; // Set canvas height to window height
+canvas.width = 144;
+canvas.height = 256;
 document.body.appendChild(canvas);
 //bg image
 var bgReady = false;
@@ -117,18 +117,6 @@ addEventListener("keyup", function (e) {
 	delete keysDown[e.keyCode];
 	f=0;
 }, false);
-
-// Adjust canvas dimensions when the window is resized
-window.addEventListener("resize", function () {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    // Call your render function again to redraw elements with new dimensions
-    render();
-
-    // Adjust the position of the bird to the center of the canvas
-    bird.x = canvas.width / 2;
-    bird.y = canvas.height / 2;
-});
 
 //function to reset game
 var reset = function () {
