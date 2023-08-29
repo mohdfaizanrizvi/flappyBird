@@ -1,3 +1,2 @@
-# flappyBird
-A simple js clone of flappy bird
+# Flappy Bird
 It is [Live](https://mohdfaizanrizvi.github.io/flappyBird) 
